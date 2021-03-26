@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asesorias y Capacitaciones Gastronómicas "El Maestro"</title>
+    <link rel="icon" href="img/chef.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>HOLA MUNDOOOO</p>
+    <header id="cabecera">
+        <div id="logo">
+            <img src="img/chef.png" alt="Logo Chef">
+        </div>
+        <h1>
+            <a href="index.html">El Maestro</a></h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Asesorías</a></li>
+                <li><a href="#">Capacitaciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contenido">
+        <h1>Misión</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo assumenda in placeat dolorum et illo harum laudantium. Ducimus laborum vitae quos a dolores suscipit rem atque, magni molestiae distinctio. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Perspiciatis maiores quidem reprehenderit eaque architecto fugit ut omnis. Aperiam eligendi recusandae id aspernatur, mollitia, ab provident saepe temporibus blanditiis hic error? Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Totam dolores quos aut, necessitatibus dolorem error expedita eius, debitis qui, obcaecati voluptas. Ab excepturi recusandae sint. Deleniti sequi asperiores ratione optio! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. A consectetur ipsum voluptate in nisi iusto eaque numquam, nam quia fugit facilis hic porro autem magnam repellat, facere expedita maiores doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vitae blanditiis
+            facilis. Illo eligendi tenetur expedita harum sed amet ad facere minima quaerat a quibusdam soluta, unde ducimus, optio repudiandae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem architecto animi mollitia, a rerum
+            similique eius voluptates accusantium. Consequuntur voluptas dolores perspiciatis similique, error animi autem accusamus expedita suscipit vel.
+        </p>
+
+        <div id="img">
+            <img src="img/chef.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
 </body>
+
 </html>

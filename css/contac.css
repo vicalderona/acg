@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: #ace4f5;
+}
+
+#cabecera h1 {
+    font-size: 35px;
+    width: 160px;
+    height: 30px;
+    margin-left: 125px;
+    padding-top: 10px;
+}
+
+#cabecera h1 a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 50px;
+}
+
+#cabecera #logo img {
+    width: 80px;
+    height: 80px;
+    padding-top: 5px;
+    display: block;
+    float: left;
+}
+
+#menu {
+    float: right;
+    margin-right: 200px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#mensaje h2 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+#formulario {
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 350px;
+}
+
+#formulario ul {
+    list-style: none;
+}
+
+#formulario ul li {
+    padding: 8px;
+}
+
+#formulario label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#formulario #boton {
+    padding: 8px;
+    text-align: center;
+}
+
+#formulario #boton input {
+    font-size: 20px;
+    font-weight: bold;
+}

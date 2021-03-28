@@ -79,15 +79,18 @@
     padding-left: 300px;
 }
 
+
+/* esto fue lo nuevo que hice */
+
 #acercade {
     margin-top: 50px;
+    width: 1550px;
+    height: 410px;
 }
 
 #acercade h1 {
     margin-right: 300px;
-    margin-top: 150px;
     font-size: 50px;
-    width: 100px;
     text-align: center;
     float: right;
 }

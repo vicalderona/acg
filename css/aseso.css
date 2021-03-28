@@ -55,26 +55,17 @@
     color: #ffffff;
 }
 
-#contenido {
-    margin-top: 50px;
-}
-
 #contenido h1 {
-    margin-left: 300px;
-    font-size: 50px;
-    width: 100px;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 50px;
 }
 
-#contenido p {
-    padding: 40px 40px;
-    width: 500px;
-    margin-left: 100px;
-    float: left;
-}
-
-#contenido img {
-    padding-left: 300px;
+#asesoria img {
+    width: 350px;
+    height: 350px;
+    padding-left: 30px;
 }
 
 footer {

@@ -55,7 +55,7 @@
     color: #ffffff;
 }
 
-#mensaje h2 {
+#mensaje h1 {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -91,4 +91,14 @@
 #formulario #boton input {
     font-size: 20px;
     font-weight: bold;
+}
+
+footer {
+    padding-left: 2%;
+    background-color: #ace4f5;
+    width: 98%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

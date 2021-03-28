@@ -57,6 +57,8 @@
 
 #contenido {
     margin-top: 50px;
+    margin-bottom: 50px;
+    height: 410px;
 }
 
 #contenido h1 {
@@ -75,4 +77,24 @@
 
 #contenido img {
     padding-left: 300px;
+}
+
+#acercade {
+    margin-top: 50px;
+}
+
+#acercade h1 {
+    margin-right: 300px;
+    margin-top: 150px;
+    font-size: 50px;
+    width: 100px;
+    text-align: center;
+    float: right;
+}
+
+#acercade p {
+    padding: 40px 40px;
+    width: 500px;
+    margin-right: 100px;
+    float: right;
 }

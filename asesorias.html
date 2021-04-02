@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/chef.png">
+    <link rel="stylesheet" href="css/aseso.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Asesorías El Maestro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<header id="cabecera">
+    <div id="logo">
+        <img src="img/chef.png" alt="Logo Chef">
+    </div>
+    <h1><a href="index.html">El Maestro</a></h1>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#acercade">Acerca de</a></li>
+            <li><a href="asesorias.html">Asesorías</a></li>
+            <li><a href="#">Capacitaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="titulo">
+        <h1>¡Nuestras asesorias!</h1>
+    </div>
+
+    <div id="carrusel">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/proveedor.png" alt="Proveedores" width="1100" height="200">
+                    <div class="carousel-caption">
+                        <h3><a href="#">Proveedores</a></h3>
+                        <p>Nuestros proveedores y sugerencias</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/costos.png" alt="Costos" width="1100" height="200">
+                    <div class="carousel-caption">
+                        <h3><a href="#"> Costos</a></h3>
+                        <p>Capacítese sobre los costos en la gastronomia</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <footer id="pie">
+        <p>Todos los derecos reservados &copy; Javier Freire & Vicente Calderon</p>
+    </footer>
+</body>
+
+</html>

@@ -77,42 +77,40 @@ body {
     color: #F4D03F;
 }
 
-#mision {
-    width: 100%;
+#mensaje h1 {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.titulo {
-    margin-top: 60px;
-    margin-left: 350px;
+#formulario {
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 350px;
 }
 
-.mensaje {
-    width: 400px;
-    margin-left: 200px;
-    margin-top: 10px;
-    float: left;
+#formulario ul {
+    list-style: none;
 }
 
-#mision #img img {
-    margin-left: 350px;
+#formulario ul li {
+    padding: 8px;
 }
 
-#acerca .titulo {
-    clear: left;
-    margin-top: 100px;
-    float: right;
-    margin-right: 450px;
+#formulario label {
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#acerca .mensaje {
-    margin-bottom: 60px
+#formulario #boton {
+    padding: 8px;
+    text-align: center;
 }
 
-#acerca img {
-    clear: right;
-    margin-left: 200px;
-    margin-top: 20px;
-    float: left;
+#formulario #boton input {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #pie {

@@ -29,6 +29,8 @@ body {
     text-shadow: 5px 5px 2px black;
     font-size: 60px;
     text-transform: uppercase;
+    margin: 0px;
+    height: 100px;
 }
 
 #cabecera h1 a {
@@ -77,49 +79,34 @@ body {
     color: #F4D03F;
 }
 
-#mision {
-    width: 100%;
-}
-
-.titulo {
-    margin-top: 60px;
-    margin-left: 350px;
-}
-
-.mensaje {
-    width: 400px;
-    margin-left: 200px;
-    margin-top: 10px;
-    float: left;
-}
-
-#mision #img img {
-    margin-left: 350px;
-}
-
-#acerca .titulo {
-    clear: left;
-    margin-top: 100px;
-    float: right;
-    margin-right: 450px;
-}
-
-#acerca .mensaje {
-    margin-bottom: 60px
-}
-
-#acerca img {
-    clear: right;
-    margin-left: 200px;
+#titulo {
+    text-align: center;
     margin-top: 20px;
-    float: left;
+}
+
+#carrusel {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+#carrusel .carousel-caption a {
+    text-decoration: none;
+    color: white;
+}
+
+#carrusel .carousel-caption {
+    color: white;
+}
+
+#carrusel img {
+    height: 400px;
 }
 
 #pie {
     margin-top: 40px;
     height: 40px;
     background-color: #333;
-    clear: left;
 }
 
 #pie p {

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/contac.css">
     <link rel="icon" href="img/chef.png">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Contacto El Maestro</title>
 </head>
 
@@ -19,18 +23,33 @@
         </div>
         <h1><a href="index.html">El Maestro</a>
         </h1>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#acercade">Acerca de</a></li>
-                <li><a href="asesorias.html">Asesorías</a></li>
-                <li><a href="#">Capacitaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#acercade" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="asesorias.html" class="nav-link">Asesorías</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="capa.html" class="nav-link">Capacitaciones</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <section>
+    <section class="contenedor">
 
         <div id="mensaje">
             <h1>¿Necesitas ayuda? ¡Contáctanos!</h1>

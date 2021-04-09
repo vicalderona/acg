@@ -22,57 +22,76 @@
         }
     </style>
 </head>
-<header id="cabecera">
-    <div id="logo">
-        <img src="img/chef.png" alt="Logo Chef">
-    </div>
-    <h1><a href="index.html">El Maestro</a></h1>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#acercade">Acerca de</a></li>
-            <li><a href="asesorias.html">Asesorías</a></li>
-            <li><a href="#">Capacitaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
-    <div id="titulo">
-        <h1>¡Nuestras asesorias!</h1>
-    </div>
-
-    <div id="carrusel">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/proveedor.png" alt="Proveedores" width="1100" height="200">
-                    <div class="carousel-caption">
-                        <h3><a href="#">Proveedores</a></h3>
-                        <p>Nuestros proveedores y sugerencias</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/costos.png" alt="Costos" width="1100" height="200">
-                    <div class="carousel-caption">
-                        <h3><a href="#"> Costos</a></h3>
-                        <p>Capacítese sobre los costos en la gastronomia</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+    <header id="cabecera">
+        <div id="logo">
+            <img src="img/chef.png" alt="Logo Chef">
         </div>
-    </div>
+        <h1><a href="index.html">El Maestro</a></h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#acercade" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="asesorias.html" class="nav-link">Asesorías</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="capa.html" class="nav-link">Capacitaciones</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contenedor">
+        <div id="titulo">
+            <h1>¡Nuestras asesorias!</h1>
+        </div>
+
+        <div class="cont-grande">
+            <div class="asesos">
+                <h2>Gastronómica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolor illum veniam et consectetur, laboriosam, excepturi eos magnam labore inventore corporis hic, iste itaque atque fugiat repellat illo accusantium. Expedita?
+                </p>
+                <ul>
+                    <li>Formación de Cartas</li>
+                    <li>Capacitación de Personal</li>
+                    <li>Restauración</li>
+                </ul>
+            </div>
+            <div class="asesos">
+                <h2>Sanitaria</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolor illum veniam et consectetur, laboriosam, excepturi eos magnam labore inventore corporis hic, iste itaque atque fugiat repellat illo accusantium. Expedita?
+                </p>
+                <ul>
+                    <li>Curso de Manipulación</li>
+                    <li>Higiene - Sanitario</li>
+                </ul>
+            </div>
+            <div class="asesos">
+                <h2>Logística</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolor illum veniam et consectetur, laboriosam, excepturi eos magnam labore inventore corporis hic, iste itaque atque fugiat repellat illo accusantium. Expedita?
+                </p>
+                <ul>
+                    <li>Inicio de Pymes</li>
+                    <li>Orientación</li>
+                    <li>Compra y Venta</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer id="pie">
         <p>Todos los derecos reservados &copy; Javier Freire & Vicente Calderon</p>

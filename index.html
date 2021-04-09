@@ -9,29 +9,56 @@
     <link rel="icon" href="img/chef.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <section class="contenedor">
-        <header id="cabecera">
-            <div id="logo">
-                <img src="img/chef.png" alt="Logo Chef">
-            </div>
-            <h1><a href="index.html">El Maestro</a></h1>
-        </header>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#acercade">Acerca de</a></li>
-                <li><a href="asesorias.html">Asesorías</a></li>
-                <li><a href="#">Capacitaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
 
-        <div id="mision">
-            <h1 class="titulo">Misión</h1>
-            <div class="mensaje">
+    <header id="cabecera">
+        <div id="logo">
+            <img src="img/chef.png" alt="Logo Chef">
+        </div>
+        <h1><a href="index.html">El Maestro</a></h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#acercade" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="asesorias.html" class="nav-link">Asesorías</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="capa.html" class="nav-link">Capacitaciones</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contenedor">
+        <div class="sect">
+            <div class="cont">
+                <h1 class="titulo">Misión</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis laboriosam obcaecati tempora ipsum sint, distinctio impedit. Nam cumque ut ullam debitis molestiae eum enim consectetur quibusdam, error nisi quaerat quo? Lorem ipsum dolor sit, amet consectetur
                     adipisicing elit. Odio nemo incidunt expedita vitae, rem aspernatur corrupti pariatur provident sequi? Error sequi quia voluptatem excepturi. Fugiat fuga saepe necessitatibus modi hic. Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -39,16 +66,45 @@
                     elit. Dolorum, fugit soluta, iusto recusandae delectus ipsam sit, in expedita hic reiciendis nostrum quam sed. Esse autem amet assumenda dolorum, explicabo eos.
                 </p>
             </div>
+            <div class="carrusel">
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-            <div id="img"><img src="img/chef.png" alt=""></div>
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/la.jpg" alt="Los Angeles" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/chicago.jpg" alt="Chicago" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/ny.jpg" alt="New York" width="1100" height="500">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div id="acerca">
-            <h1 class="titulo">Acerca de</h1>
+        <div class="sect">
             <a name="acercade"></a>
-            <div id="img"><img src="img/chef2.png" alt=""></div>
 
-            <div class="mensaje">
+            <div class="cont">
+                <h1 class="titulo">Acerca de</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perspiciatis magni nobis odit consequatur necessitatibus. Minima, possimus velit veniam quasi aliquid tempore at fugiat, voluptate dolore ad, minus repellat saepe. Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Vero voluptatum dolorum est, reiciendis facere deserunt, perferendis, fuga vitae id rerum corporis numquam repellat unde? Ratione aperiam maiores quia perspiciatis eaque. Lorem ipsum, dolor sit amet consectetur
@@ -56,14 +112,49 @@
                     elit. Neque, quasi explicabo aperiam est harum fugit qui nesciunt iusto vel, sit, obcaecati veritatis natus quibusdam ea mollitia voluptate earum corrupti nam.
                 </p>
             </div>
+
+            <div class="carrusel">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/la.jpg" alt="Los Angeles" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/chicago.jpg" alt="Chicago" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/ny.jpg" alt="New York" width="1100" height="500">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
         </div>
 
 
 
-        <footer id="pie">
-            <p>Todos los derecos reservados &copy; Javier Freire & Vicente Calderon</p>
-        </footer>
+
     </section>
+    <footer id="pie">
+        <p>Todos los derecos reservados &copy; Javier Freire & Vicente Calderon</p>
+    </footer>
+
 
 
 

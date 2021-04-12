@@ -1,69 +1,81 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #f7f7f7;
 }
 
 #cabecera {
     width: 100%;
+}
+
+#logo {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#logo img {
     height: 100px;
-    background-color: #ace4f5;
+    width: 100PX;
 }
 
 #cabecera h1 {
-    font-size: 35px;
-    width: 160px;
-    height: 30px;
-    margin-left: 125px;
-    padding-top: 10px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 2px black;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 #cabecera h1 a {
+    color: #F4D03F;
     text-decoration: none;
-    color: #ffffff;
-    padding-left: 50px;
 }
 
-#cabecera #logo img {
-    width: 80px;
-    height: 80px;
-    padding-top: 5px;
-    display: block;
-    float: left;
+#cabecera h1 a:hover {
+    color: #F4D03F;
 }
 
-#menu {
-    float: right;
-    margin-right: 200px;
+nav {
+    margin-top: 30px;
 }
 
-#menu ul {
-    list-style: none;
+nav ul li {
+    padding: 0px 15px;
+    border-right: 1px solid white;
 }
 
-#menu ul li {
-    float: left;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-right: 1px solid #ffffff;
-    font-size: 20px;
-    font-weight: bold;
+#menu ul li:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #menu ul li a {
+    font-weight: bold;
     text-decoration: none;
-    color: #ffffff;
+    font-size: 15px;
+}
+
+#menu ul li a:hover {
+    color: #F4D03F;
+}
+
+.contenedor {
+    height: 100vh;
 }
 
 #mensaje h1 {
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    font-size: 50px;
+    margin-top: 50px;
 }
 
 #formulario {
     margin: 0 auto;
+    margin-top: 40px;
     align-content: center;
     border-radius: 10px;
     border: 1px solid #666666;
@@ -93,12 +105,26 @@
     font-weight: bold;
 }
 
-footer {
-    padding-left: 2%;
-    background-color: #ace4f5;
-    width: 98%;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#pie {
+    margin-top: 40px;
+    height: 40px;
+    background-color: #333;
+    clear: left;
+}
+
+#pie p {
+    line-height: 40px;
+    font-size: 10px;
+    color: white;
+    margin-left: 25px;
+}
+
+@media (max-width: 992px) {
+    nav ul li {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    #menu ul li a:hover {
+        color: #F4D03F;
+    }
 }

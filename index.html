@@ -193,17 +193,17 @@
                         <div class="col">
                             <label for="correo">Correo Electronico: </label>
                             <input type="text" size="50" class="form-control" id="correo" placeholder="Ingrese su correo">
-                            <div id="mensaje3" class="errores">Ingrese un correo</div>
+                            <div id="mensaje3" class="errores">Ingrese un correo válido</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="asunto">Consulta: </label>
                             <select name="asunto" width="100" id="consulta" class="form-control">
-                            <option value=""></option>
-                            <option value="aseso">Asesorías</option>
-                            <option value="capa">Capacitaciones</option>
-                            <option value="otro">Otros</option>
+                            <option value="0"></option>
+                            <option value="1">Asesorías</option>
+                            <option value="2">Capacitaciones</option>
+                            <option value="3">Otros</option>
                         </select>
                             <div id="mensaje4" class="errores">Seleccione una opción</div>
 
@@ -217,7 +217,7 @@
                     </div>
                     <div class="boton">
                         <button type="button" id="enviar">Enviar</button>
-                        <button type="button" id="limpiar">Limpiar</button>
+                        <button type="reset" id="limpiar">Limpiar</button>
                     </div>
                 </form>
             </div>

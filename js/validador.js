@@ -1,4 +1,10 @@
 $("#enviar").click(function() {
+
+    function validar_correo(correo) {
+        var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(correo)
+    }
+
     if ($("#nombre").val().length < 3) {
         $("#mensaje1").show();
     } else {
@@ -9,12 +15,12 @@ $("#enviar").click(function() {
     } else {
         $("#mensaje2").hide();
     }
-    if ($("#correo").val().length == 0) {
-        $("#mensaje3").show();
-    } else {
+    if (validar_correo($("#correo").val())) {
         $("#mensaje3").hide();
+    } else {
+        $("#mensaje3").show();
     }
-    if ($("#consulta :selected")) {
+    if ($("#consulta").val() == 0 || $("#consulta").val() == 0) {
         $("#mensaje4").show();
     } else {
         $("#mensaje4").hide();
@@ -24,4 +30,7 @@ $("#enviar").click(function() {
     } else {
         $("#mensaje5").hide();
     }
+})
+$("#limpiar").click(function() {
+    $(".errores").hide();
 })

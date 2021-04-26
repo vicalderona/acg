@@ -10,7 +10,7 @@ $("#enviar").click(function() {
     } else {
         $("#mensaje1").hide();
     }
-    if ($("#apellido").val().length == 0) {
+    if ($("#apellido").val().length < 7) {
         $("#mensaje2").show();
     } else {
         $("#mensaje2").hide();

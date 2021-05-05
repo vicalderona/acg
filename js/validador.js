@@ -26,9 +26,12 @@ $("#enviar").click(function() {
         $("#mensaje4").show();
     }
     if ($("#mensaje").val().length >= 20 && $("#mensaje").blur()) {
-        $("#mensaje5").show();
-    } else {
         $("#mensaje5").hide();
+    } else {
+        $("#mensaje5").show();
+    }
+    if ($("#nombre").val().length == 0 || $("#apellido").val().length == 0 || $("#correo").val().length == 0 || $("#consulta").val().length == 0 || $("#mensaje").val().length == 0) {
+        event.preventDefault();
     }
 })
 $("#limpiar").click(function() {

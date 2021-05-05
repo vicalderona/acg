@@ -171,28 +171,28 @@
 
 
 
-                <form>
+                <form action="php/enviar.php" method="POST">
 
                     <div class="row">
                         <div class="col">
                             <label for="nombre">Nombres: </label>
-                            <input type="text" size="50" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            <input type="text" size="50" class="form-control" id="nombre" placeholder="Ingrese su nombre (mínimo 3 caracteres)">
                             <div id="mensaje1" class="errores">Ingrese un nombre</div>
                         </div>
                         <div class="col">
                             <label for="apellido">Apellidos: </label>
-                            <input type="text" size="50" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+                            <input type="text" size="50" class="form-control" id="apellido" placeholder="Ingrese sus apellidos (mínimo 7 caracteres)">
                             <div id="mensaje2" class="errores">Ingrese un apellido</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="celular">Celular: (Opcional)</label>
-                            <input type="text" size="50" class="form-control" id="celular" placeholder="Ingrese su Celular">
+                            <input type="text" size="50" class="form-control" id="celular" placeholder="Ingrese su Celular (Ej: 912345678)">
                         </div>
                         <div class="col">
                             <label for="correo">Correo Electronico: </label>
-                            <input type="text" size="50" class="form-control" id="correo" placeholder="Ingrese su correo">
+                            <input type="text" size="50" class="form-control" id="correo" placeholder="Ingrese su correo (Ej: abcde@gmail.com)">
                             <div id="mensaje3" class="errores">Ingrese un correo válido</div>
                         </div>
                     </div>
@@ -201,9 +201,9 @@
                             <label for="asunto">Consulta: </label>
                             <select name="asunto" width="100" id="consulta" class="form-control">
                             <option value="0"></option>
-                            <option value="1">Asesorías</option>
-                            <option value="2">Capacitaciones</option>
-                            <option value="3">Otros</option>
+                            <option value="Asesorías">Asesorías</option>
+                            <option value="Capacitaciones">Capacitaciones</option>
+                            <option value="Otros">Otros</option>
                         </select>
                             <div id="mensaje4" class="errores">Seleccione una opción</div>
 
@@ -216,16 +216,31 @@
 
                     </div>
                     <div class="boton">
-                        <button type="button" id="enviar">Enviar</button>
+                        <input type="submit" value="enviar" id="enviar">
                         <button type="reset" id="limpiar">Limpiar</button>
                     </div>
                 </form>
             </div>
 
+            <div class="recetas-random">
+                <h1>Algunas de nuestras recetas</h1>
+                <div id="img"></div>
+                <div class="receta">
+                    <div id="nombrere" class="style"></div>
+                    <div id="categoria" class="style"></div>
+                    <div id="origen" class="style"></div>
+                    <div id="ingredientes" class="style"></div>
+                    <div id="pasos" class="style"></div>
+                    <div id="video" class="style"></div>
+                </div>
+
+
+            </div>
 
             <a href="#principio"><img src="img/flecha-hacia-arriba.png" id="arriba" alt=""></a>
 
             <script src="js/boton-arriba.js"></script>
+            <script src="js/receta-api.js"></script>
         </section>
         <footer id="pie">
             <div class="menu-pie">
